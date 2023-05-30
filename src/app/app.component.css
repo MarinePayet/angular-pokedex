@@ -1,12 +1,18 @@
 .poke-female{
   background-color: pink;
+  color: white;
+  font-weight: bold;
 }
 
 
 .poke-nogender{
   background-color: green;
+  color: white;
 }
 
 .poke-male{
   background-color: blue;
+  color: white;
 }
+
+
