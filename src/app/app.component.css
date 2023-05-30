@@ -1,0 +1,15 @@
+.poke-female{
+  background-color: pink;
+  border-style: dashed;
+}
+
+
+.poke-nogender{
+  background-color: green;
+  border-style: dashed;
+}
+
+.poke-male{
+  background-color: blue;
+  border-style: dashed;
+}

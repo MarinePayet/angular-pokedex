@@ -1,0 +1,26 @@
+<div class="container mt-4">
+  <h1>Mes pokemons</h1>
+  <div class="row mb-4">
+    <div class="col-9">
+      <input type="text" class="form-control" [(ngModel)]="currentPokemonName" />
+    </div>
+    <div class="col-3">
+      <button class="btn btn-primary" (click)="addPokemon()">Ajouter</button>
+    </div>
+  </div>
+
+
+  <app-pokemon-item *ngFor="let pokemon of pokemons" [pokemon]="pokemon"
+  [ngClass]="{
+    'poke-female': pokemon.gender === 'female',
+    'poke-nogender': pokemon.gender === 'no gender',
+    'poke-male': pokemon.gender === 'male'}"
+  >
+    {{pokemon.name}} - {{pokemon.gender}}
+  </app-pokemon-item>
+
+
+
+
+
+</div>
