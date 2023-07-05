@@ -10,12 +10,12 @@
   </div>
 
 
-  <app-pokemon-item *ngFor="let pokemon of pokemons" [pokemon]="pokemon"
+  <app-pokemon-item *ngFor="let pokemon of pokemons, let myIndex = index" [pokemon]="pokemon"
   [ngClass]="{
     'poke-female': pokemon.gender === 'female',
     'poke-nogender': pokemon.gender === 'no gender',
     'poke-male': pokemon.gender === 'male'}"
-  >
+  (onDelete)="onDeletePokemon(myIndex, $event)">
     {{pokemon.name}} - {{pokemon.gender}}
   </app-pokemon-item>
 

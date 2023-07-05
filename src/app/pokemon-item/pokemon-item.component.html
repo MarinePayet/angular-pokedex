@@ -1,9 +1,10 @@
 
 <div class="row p-3" *ngIf="pokemon">
-  <div class="col-9">
+  <div class="col-7">
     {{pokemon.name}}
   </div>
   <div class="col-3">
     {{pokemon.gender}}
   </div>
+  <button class="btn btn-dark col-2" (click)="onDeleteBtnClick()">Supprimer</button>
 </div>

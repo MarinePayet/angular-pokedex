@@ -28,4 +28,8 @@ getRandomGender(): PokemonGender {
   return 'no gender'
 }
 
+onDeletePokemon(index:number, name:string){
+  this.pokemons.splice(index,1)
+}
+
 }
